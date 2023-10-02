@@ -96,7 +96,7 @@
 }
 /* /NOTIFICATION */
 
-/* CHAT */
+/* SELECT-CHAT */
 .search {
   width: 100%;
   height: 40px;
@@ -117,4 +117,24 @@
   height: calc(100% - 160px);
 }
 
-/* /CHAT */
+/* /SELECT-CHAT */
+
+/* CHAT-BASE */
+.sendMsg {
+  background-color: #F3EEEA;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+.sendMsg .emoji,
+.sendMsg > .send{
+  color: #6A7174;
+  cursor: pointer;
+}
+
+.sendMsg > input {
+  width: 70%;
+}
+  /* /CHAT-BASE */
