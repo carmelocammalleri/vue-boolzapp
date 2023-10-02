@@ -127,6 +127,8 @@
   height: calc(100% - 120px);
   padding: 10px 50px;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 .baloon {
@@ -136,10 +138,13 @@
 .baloon .submitted{
   background-color: #D5F9BA;
   float: right;
+  max-width: 60%;
 }
 
 .baloon .received{
   background-color: #FFFFFF;
+  max-width: 60%;
+
 }
 
 .baloon span {
