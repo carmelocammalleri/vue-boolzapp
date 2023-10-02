@@ -22,12 +22,12 @@
 .main-wrapper {
   width: 100%;
   display: flex;
+  background-color: white;
 }
 
 .chatSelector {
   width: 30%;
   height: 585px;
-  background-color: rgb(151, 212, 145);
 }
 
 .chatBase {
@@ -45,7 +45,12 @@
   align-items: center;
   padding: 10px;
   height: 60px;
-  background-color:#EAEAEA ;
+  background-color:white ;
+  border-right: 1px solid rgba(128, 128, 128, 0.455);
+}
+
+.active {
+  background-color: #EAEAEA;
 }
 
 .profileUser > img {
@@ -57,7 +62,7 @@
   height: 40px;
 }
 
-.profileUser > span {
+.profileUser > .user {
   width: 100%;
   padding-left: 10px;
 }
@@ -86,7 +91,7 @@
   margin: 0 20px;
 }
 
-.notification .textMsg {
+.textMsg {
   font-size: .8rem;
 }
 /* /NOTIFICATION */
@@ -108,7 +113,7 @@
 }
 
 .scrollSec {
-  overflow: auto;
+  overflow-y:scroll;
   height: calc(100% - 160px);
 }
 
