@@ -7,4 +7,13 @@
 .mainBg {
   height: 100vh;
   background: linear-gradient(180deg, #009688 20%, #DADBD3 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: blueviolet;
+  width: 70%;
+  height: 90%;
 }
