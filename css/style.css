@@ -1,9 +1,11 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* CONTAINERS DIV */
 .mainBg {
   height: 100vh;
   background: linear-gradient(180deg, #009688 20%, #DADBD3 20%);
@@ -33,3 +35,30 @@
   height: 585px;
   background-color: rgb(192, 137, 55);
 }
+
+/* /CONTAINERS DIV */
+
+/* PROFILE USER */
+.profileUser {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  line-height: 40px;
+  background-color:cadetblue ;
+}
+
+.profileUser > img {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 0 7px;
+}
+
+.profileUser > span {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.profileUser > div {
+ margin-left: 5px;
+}
+/* /PROFILE USER */
