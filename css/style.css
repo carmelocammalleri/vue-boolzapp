@@ -120,6 +120,33 @@
 /* /SELECT-CHAT */
 
 /* CHAT-BASE */
+
+/* chat-messages */
+.messagesChat {
+  background-color: #E5DDD4;
+  height: calc(100% - 120px);
+  display: flex;
+}
+
+.baloon {
+  width: 100%;
+  height: 10%;
+}
+
+.baloon .received{
+  background-color: #D5F9BA;
+  width: 60%;
+}
+
+.baloon .submitted{
+  background-color: #FFFFFF;
+  width: 60%;
+  align-items: end;
+  text-align: end;
+}
+
+
+/* send-message */
 .sendMsg {
   background-color: #F3EEEA;
   display: flex;
