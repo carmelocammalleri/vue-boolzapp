@@ -13,7 +13,23 @@
 }
 
 .container {
-  background-color: blueviolet;
-  width: 70%;
+  width: 80%;
   height: 90%;
+}
+
+.main-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.chatSelector {
+  width: 30%;
+  height: 585px;
+  background-color: rgb(151, 212, 145);
+}
+
+.chatBase {
+  width: 70%;
+  height: 585px;
+  background-color: rgb(192, 137, 55);
 }
