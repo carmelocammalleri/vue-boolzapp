@@ -28,7 +28,7 @@
           <!-- select chat -->
           <section class="chatSelector">
             <div class="profileUser active">
-              <img src="" alt="img">
+              <img :src="" alt="img">
               <span class="user">user</span>
               <div>ic1</div>
               <div>ic2</div>
@@ -53,47 +53,13 @@
 
             <!-- USERS MESSAGE -->
             <div class="scrollSec">
-              <div class="profileUser">
-                <img src="" alt="img">
-                <span class="user">user</span>
+              <div 
+                v-for="(contact, index) in contacts"
+                class="profileUser">
+                <img :src="contact.avatar" alt="img">
+                <span class="user">{{contact.name}}</span>
                 <div>data</div>       
-              </div>
-              <div class="profileUser">
-                <img src="" alt="img">
-                <span class="user">user</span>
-                <div>data</div>       
-              </div>
-              <div class="profileUser">
-                <img src="" alt="img">
-                <span class="user">user</span>
-                <div>data</div>       
-              </div>
-              <div class="profileUser">
-                <img src="" alt="img">
-                <span class="user">user</span>
-                <div>data</div>       
-              </div>
-              <div class="profileUser">
-                <img src="" alt="img">
-                <span class="user">user</span>
-                <div>data</div>       
-              </div>
-              <div class="profileUser">
-                <img src="" alt="img">
-                <span class="user">user</span>
-                <div>data</div>       
-              </div>
-              <div class="profileUser">
-                <img src="" alt="img">
-                <span class="user">user</span>
-                <div>data</div>       
-              </div>
-              <div class="profileUser">
-                <img src="" alt="img">
-                <span class="user">user</span>
-                <div>data</div>       
-              </div>
-            </div>
+              </div>  
             
             <!-- USERS MESSAGE -->
           </section>
