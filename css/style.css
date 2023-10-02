@@ -3,3 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.mainBg {
+  height: 100vh;
+  background: linear-gradient(180deg, #009688 20%, #DADBD3 20%);
+}
