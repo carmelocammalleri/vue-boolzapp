@@ -86,3 +86,21 @@
   font-size: .8rem;
 }
 /* /NOTIFICATION */
+
+/* CHAT */
+.search {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.search > button {
+  width: 10%;
+  margin: 10px;
+}
+
+.search > input {
+  width: 80%;
+}
+
+/* /CHAT */
