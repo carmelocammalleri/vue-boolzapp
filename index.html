@@ -81,10 +81,11 @@
 
             <!-- chat-messages -->
             <div 
-              v-for="msg in contacts[contactCurrent].messages"
               class="messagesChat">
 
-              <div class="baloon">
+              <div
+              v-for="msg in contacts[contactCurrent].messages"
+              class="baloon">
                 <span 
                   class="received">
                   {{msg.message}}
