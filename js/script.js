@@ -168,6 +168,10 @@ createApp ({
         ],
         contactCurrent:0,
         newMsg: [],
+        sentMessage: [{
+          message: '',
+          status: 'sent'
+        }],
         isError: false,
     }  
   },
@@ -181,11 +185,14 @@ createApp ({
     // funzione per aggiungere un nuovo messaggio
     sendMsg(){
       if(this.newMsg.length <1){
+        // per non far inviare messaggio vuoto
         isError: true
       } else {
-        this.contacts[this.contactCurrent].messages.push(this.newMsg)
-        console.log(this.newMsg);
-        this.newMsg =''
+        // salva in un array ad oggetti e poi lo stampa nella chat
+        this.sentMessage.message = this.newMsg;
+        this.contacts[this.contactCurrent].messages.push(this.sentMessage)
+        console.log(this.sentMessage);
+        this.newMsg ='';
       }
 
     }
