@@ -167,7 +167,8 @@ createApp ({
           }
         ],
         contactCurrent:0,
-        newMsg: []
+        newMsg: [],
+        isError: false,
     }  
   },
 
@@ -179,8 +180,14 @@ createApp ({
     },
     // funzione per aggiungere un nuovo messaggio
     sendMsg(){
-      this.contacts[this.contactCurrent].messages.push(this.newMsg)
-      this.newMsg=''
+      if(this.newMsg.length <1){
+        isError: true
+      } else {
+        this.contacts[this.contactCurrent].messages.push(this.newMsg)
+        console.log(this.newMsg);
+        this.newMsg =''
+      }
+
     }
   }
   
