@@ -196,8 +196,19 @@ createApp ({
         console.log(sentMessage);
         this.newMsg ='';
       }
-
+    },
+    receivedMsg (){
+      //funzione nuovo messaggio ricevuto
+      let receivedMessage = {
+        message: 'Ok!',
+        date:'',
+        status: 'received'
+      }
+      setTimeout(()=> this.contacts[this.contactCurrent].messages.push(receivedMessage) , 3000)
     }
+   
+
+
   }
   
 

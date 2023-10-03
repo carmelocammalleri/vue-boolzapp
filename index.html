@@ -104,7 +104,7 @@
               </div>
               <input 
                 v-model.trim="newMsg"
-                @keyup.enter="sendMsg()"
+                @keyup.enter="sendMsg(), receivedMsg ()"
                 type="text" placeholder="Scrivi un messaggio">
               <div class="send">
                 <i class="fa-solid fa-microphone"></i>
