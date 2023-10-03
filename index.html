@@ -30,9 +30,9 @@
             <div class="profileUser active">
               <img src="./img/avatar_io.jpg" alt="Pippo">
               <span class="user">Pippo</span>
-              <div>ic1</div>
-              <div>ic2</div>
-              <div>ic3</div>
+              <div><i class="fa-solid fa-circle-notch profileIcone"></i></div>
+              <div><i class="fa-solid fa-message profileIcone"></i></div>
+              <div><i class="fa-solid fa-ellipsis-vertical profileIcone"></i></div>
             </div>
 
             <!-- notification -->
@@ -69,13 +69,13 @@
           <section class="chatBase">
             <!-- profile-choosen -->
             <div class="profileUser active">
-              <img src="" alt="img">
-              <div class="user">user <br>
+              <img :src="contacts[contactCurrent].avatar" alt="img">
+              <div class="user">{{contacts[contactCurrent].name}}<br>
                 <span class="textMsg">Ultimo accesso</span>
               </div>
-              <div>ic1</div>
-              <div>ic2</div>
-              <div>ic3</div>
+              <div><i class="fa-solid fa-magnifying-glass"></i></div>
+              <div><i class="fa-solid fa-paperclip profileIcone"></i></div>
+              <div><i class="fa-solid fa-ellipsis-vertical profileIcone"></i></div>
             </div>
 
             <!-- chat-messages -->
