@@ -168,11 +168,6 @@ createApp ({
         ],
         contactCurrent:0,
         newMsg: [],
-        sentMessage: {
-          message: '',
-          date:'',
-          status: 'sent'
-        },
         isError: false,
     }  
   },
