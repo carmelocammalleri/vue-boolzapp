@@ -168,10 +168,11 @@ createApp ({
         ],
         contactCurrent:0,
         newMsg: [],
-        sentMessage: [{
+        sentMessage: {
           message: '',
+          date:'',
           status: 'sent'
-        }],
+        },
         isError: false,
     }  
   },
@@ -189,9 +190,15 @@ createApp ({
         isError: true
       } else {
         // salva in un array ad oggetti e poi lo stampa nella chat
-        this.sentMessage.message = this.newMsg;
-        this.contacts[this.contactCurrent].messages.push(this.sentMessage)
-        console.log(this.sentMessage);
+        let sentMessage= {
+          message: '',
+          date:'',
+          status: 'sent'
+        };
+
+        sentMessage.message = this.newMsg;
+        this.contacts[this.contactCurrent].messages.push(sentMessage)
+        console.log(sentMessage);
         this.newMsg ='';
       }
 
