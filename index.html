@@ -87,8 +87,11 @@
               v-for="msg in contacts[contactCurrent].messages"
               class="baloon">
                 <span 
+                  class="message"
                   :class="(msg.status == 'received') ? 'received' : 'submitted'">
                   {{msg.message}}
+                  <br>
+                  <span class="dateMsg">12:30</span>
                 </span>
                 
               </div>

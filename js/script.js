@@ -166,7 +166,8 @@ createApp ({
             ]
           }
         ],
-        contactCurrent:0
+        contactCurrent:0,
+        newMsg: []
     }  
   },
 
@@ -176,6 +177,10 @@ createApp ({
         this.contactCurrent = position;
         return this.contactCurrent;
     },
+    // funzione per aggiungere un nuovo messaggio
+    sendMsg(){
+      
+    }
   }
   
 
