@@ -28,8 +28,8 @@
           <!-- select chat -->
           <section class="chatSelector">
             <div class="profileUser active">
-              <img :src="" alt="img">
-              <span class="user">user</span>
+              <img src="./img/avatar_io.jpg" alt="Pippo">
+              <span class="user">Pippo</span>
               <div>ic1</div>
               <div>ic2</div>
               <div>ic3</div>
@@ -37,9 +37,7 @@
 
             <!-- notification -->
             <div class="notification">
-              <div class="bell">
-                cam
-              </div>
+                <i class="fa-solid fa-bell-slash bell"></i>
               <div class="textNotif">
                 <h5> Ricevi notifiche</h5>
                 <span class="textMsg"><a href="">Attiva le notifiche desktop</a></span>
@@ -47,7 +45,7 @@
             </div>
 
             <nav class="search">
-              <button>c</button>
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
               <input type="text">
             </nav>
 
@@ -55,7 +53,9 @@
             <div class="scrollSec">
               <div 
                 v-for="(contact, index) in contacts"
-                class="profileUser">
+                :class="(index == contactCurrent) ? 'active': '' "
+                class="profileUser"
+                @click="setIndexContact(index)">
                 <img :src="contact.avatar" alt="img">
                 <span class="user">{{contact.name}}</span>
                 <div>data</div>       
@@ -85,7 +85,7 @@
                 <span class="received">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae doloremque ullam eius laboriosam nisi nostrum sunt cum quas cupiditate et odio corporis itaque molestiae deleniti excepturi, nobis reiciendis id praesentium.</span></div>
 
               <div class="baloon">
-                <span class="submitted">messaggio inviato</span></div>
+                <span class="submitted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sit est neque odio accusantium reprehenderit doloremque? Perspiciatis mollitia amet similique in, odio eveniet culpa fuga, quis distinctio temporibus eaque optio.</span></div>
             </div>
 
             <!-- send-message -->
