@@ -188,6 +188,8 @@
 }
 
 .sendMsg > input {
-  width: 70%;
+  width: 85%;
+  border: none;
+  height: 40px;
 }
   /* /CHAT-BASE */
