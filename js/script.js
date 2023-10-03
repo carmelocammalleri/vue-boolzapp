@@ -179,7 +179,8 @@ createApp ({
     },
     // funzione per aggiungere un nuovo messaggio
     sendMsg(){
-      
+      this.contacts[this.contactCurrent].messages.push(this.newMsg)
+      this.newMsg=''
     }
   }
   
