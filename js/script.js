@@ -226,7 +226,8 @@ createApp ({
     //search element
     searchElement(){
       if(this.searchValue.trim().length > 0){
-      
+        // se scriviamo anche una sola lettera nell'input ci ritorna il nome del contatto all'interno dell'array. Con il primo lower case  posso cercare anche con lettere in minuscolo con l'ultimo sistemo anche il fatto di poter cercare con il maiuscolo
+        return this.contacts.filter((contact)=> contact.name.toLowerCase().includes(this.searchValue.trim().toLowerCase()))
       } 
         return this.contacts
     }
