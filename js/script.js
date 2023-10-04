@@ -210,6 +210,9 @@ createApp ({
     },
     getLastMessage(contact){
       return contact.messages.at(-1).message
+    },
+    getLastDate(contact){
+      return contact.messages.at(-1).date
     }
   }
   

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 /* CONTAINERS DIV */
@@ -133,9 +134,10 @@
   color: #B7B7B7;
 }
 
-.lastMessage{
+.lastMessage,
+.dateEvolution{
   font-size: .6rem;
-  color: #C9CCCF;
+  color: #afb1b3;
 }
 
 /* /SELECT-CHAT */

@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT FAMILY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Lato:wght@100;300;700&family=Montserrat:wght@100;400;700&family=Open+Sans:wght@400;600;700;800&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- VUE -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -71,7 +75,7 @@
                     </span>
                 </span>
 
-                <div>{{contact.date}}</div>       
+                <span class="dateEvolution">{{getLastDate(contact)}}</span>       
               </div>  
             
             <!-- USERS MESSAGE -->
