@@ -51,16 +51,20 @@
               </div>
             </div>
 
+            <!-- search barr -->
             <nav class="search">
               <button>
                 <i class="fa-solid fa-magnifying-glass"></i></button>
-              <input type="text" placeholder="Cerca">
+              <input 
+                v-model="searchValue"
+                type="text" placeholder="Cerca">
             </nav>
 
             <!-- USERS MESSAGE -->
             <div class="scrollSec">
               <div 
-                v-for="(contact, index) in contacts"
+                v-for="(contact, index) in searchElement"
+                :key="index"
                 :class="(index == contactCurrent) ? 'active': '' "
                 class="profileUser"
                 @click="setIndexContact(index)">
@@ -89,8 +93,12 @@
             <div class="profileUser active">
               <img :src="contacts[contactCurrent].avatar" alt="img">
               <div class="user">{{contacts[contactCurrent].name}}<br>
-                <span class="textMsg">Ultimo accesso {{contacts[contactCurrent].date}}</span>
+                <span class="textMsg">
+                  Ultimo accesso 
+                </span>
               </div>
+
+              <!-- icone -->
               <div><i class="fa-solid fa-magnifying-glass"></i></div>
               <div><i class="fa-solid fa-paperclip profileIcone"></i></div>
               <div><i class="fa-solid fa-ellipsis-vertical profileIcone"></i></div>

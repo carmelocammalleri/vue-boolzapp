@@ -171,21 +171,26 @@ createApp ({
         contactCurrent:0,
         newMsg: [],
         isError: false,
+        searchValue: ''
     }  
   },
 
   methods: {
+    
     // funzione per impostare l'index del contatto cliccato
     setIndexContact(position) {
         this.contactCurrent = position;
         return this.contactCurrent;
     },
+
     // funzione per aggiungere un nuovo messaggio
     sendMsg(){
       if(this.newMsg.length <1){
+
         // per non far inviare messaggio vuoto
         isError: true
       } else {
+
         // salva in un array ad oggetti e poi lo stampa nella chat
         let sentMessage= {
           message: '',
@@ -200,6 +205,7 @@ createApp ({
       }
     },
     receivedMsg (){
+
       //funzione nuovo messaggio ricevuto
       let receivedMessage = {
         message: 'Ok!',
@@ -213,6 +219,14 @@ createApp ({
     },
     getLastDate(contact){
       return contact.messages.at(-1).date
+    },
+  },
+
+  computed:{
+    //search element
+    searchElement(){
+      
+        return this.contacts
     }
   }
   
