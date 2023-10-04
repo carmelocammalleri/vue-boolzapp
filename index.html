@@ -7,6 +7,9 @@
   <!-- VUE -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+  <!-- LUXON -->
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
+
   <!-- FONT-AWESOME -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
 
@@ -82,7 +85,7 @@
             <div class="profileUser active">
               <img :src="contacts[contactCurrent].avatar" alt="img">
               <div class="user">{{contacts[contactCurrent].name}}<br>
-                <span class="textMsg">Ultimo accesso {{contacts.date}}</span>
+                <span class="textMsg">Ultimo accesso {{contacts[contactCurrent].date}}</span>
               </div>
               <div><i class="fa-solid fa-magnifying-glass"></i></div>
               <div><i class="fa-solid fa-paperclip profileIcone"></i></div>

@@ -1,5 +1,7 @@
 const {createApp} =  Vue;
 
+const dt = luxon.DateTime;
+
 createApp ({
   data(){
     return{
@@ -187,7 +189,7 @@ createApp ({
         // salva in un array ad oggetti e poi lo stampa nella chat
         let sentMessage= {
           message: '',
-          date:'',
+          date: dt.now().setLocale('it').toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS),
           status: 'sent'
         };
 
@@ -201,7 +203,7 @@ createApp ({
       //funzione nuovo messaggio ricevuto
       let receivedMessage = {
         message: 'Ok!',
-        date:'',
+        date: dt.now().setLocale('it').toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS),
         status: 'received'
       }
       setTimeout(()=> this.contacts[this.contactCurrent].messages.push(receivedMessage) , 3000)
