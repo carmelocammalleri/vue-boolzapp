@@ -176,7 +176,7 @@ createApp ({
   },
 
   methods: {
-    
+
     // funzione per impostare l'index del contatto cliccato
     setIndexContact(position) {
         this.contactCurrent = position;
@@ -225,7 +225,9 @@ createApp ({
   computed:{
     //search element
     searchElement(){
+      if(this.searchValue.trim().length > 0){
       
+      } 
         return this.contacts
     }
   }
