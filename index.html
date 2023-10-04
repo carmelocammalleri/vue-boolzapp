@@ -58,8 +58,17 @@
                 class="profileUser"
                 @click="setIndexContact(index)">
                 <img :src="contact.avatar" alt="img">
-                <span class="user">{{contact.name}}</span>
-                <div>data</div>       
+                <span class="user">
+                  {{contact.name}}
+                  <br>
+                  
+                  <!-- lastMessage -->
+                    <span class="lastMessage"> 
+                      {{getLastMessage(contact)}}
+                    </span>
+                </span>
+
+                <div>{{contact.date}}</div>       
               </div>  
             
             <!-- USERS MESSAGE -->
@@ -68,11 +77,12 @@
 
           <!-- chat -->
           <section class="chatBase">
+
             <!-- profile-choosen -->
             <div class="profileUser active">
               <img :src="contacts[contactCurrent].avatar" alt="img">
               <div class="user">{{contacts[contactCurrent].name}}<br>
-                <span class="textMsg">Ultimo accesso</span>
+                <span class="textMsg">Ultimo accesso {{contacts.date}}</span>
               </div>
               <div><i class="fa-solid fa-magnifying-glass"></i></div>
               <div><i class="fa-solid fa-paperclip profileIcone"></i></div>
@@ -91,7 +101,9 @@
                   :class="(msg.status == 'received') ? 'received' : 'submitted'">
                   {{msg.message}}
                   <br>
-                  <span class="dateMsg">12:30</span>
+                  <span class="dateMsg">
+                    {{msg.date}}
+                  </span>
                 </span>
                 
               </div>

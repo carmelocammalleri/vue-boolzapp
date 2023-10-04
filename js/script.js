@@ -205,10 +205,10 @@ createApp ({
         status: 'received'
       }
       setTimeout(()=> this.contacts[this.contactCurrent].messages.push(receivedMessage) , 3000)
+    },
+    getLastMessage(contact){
+      return contact.messages.at(-1).message
     }
-   
-
-
   }
   
 

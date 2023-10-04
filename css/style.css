@@ -133,6 +133,11 @@
   color: #B7B7B7;
 }
 
+.lastMessage{
+  font-size: .6rem;
+  color: #C9CCCF;
+}
+
 /* /SELECT-CHAT */
 
 /* CHAT-BASE */
