@@ -126,7 +126,7 @@ createApp ({
                   message: 'Quindi nessuna nuova, che peccato. Ci sentiamo presto',
                   status: 'sent'
                 }
-              ],
+              ]
         },
         {
           name: 'Federico',
@@ -214,9 +214,13 @@ createApp ({
       }
       setTimeout(()=> this.contacts[this.contactCurrent].messages.push(receivedMessage) , 3000)
     },
+
+    //seleziona ultimo messaggio
     getLastMessage(contact){
       return contact.messages.at(-1).message
     },
+
+    //seleziona ultima data di invio messaggio
     getLastDate(contact){
       return contact.messages.at(-1).date
     },

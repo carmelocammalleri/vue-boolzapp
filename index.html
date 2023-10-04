@@ -94,7 +94,7 @@
               <img :src="contacts[contactCurrent].avatar" alt="img">
               <div class="user">{{contacts[contactCurrent].name}}<br>
                 <span class="textMsg">
-                  Ultimo accesso 
+                  Ultimo accesso {{getLastDate(contacts[contactCurrent])}}
                 </span>
               </div>
 
