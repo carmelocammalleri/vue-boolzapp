@@ -29,7 +29,6 @@
 
 .chatSelector {
   width: 30%;
-  height: 585px;
 }
 
 .profileIcone {
@@ -37,10 +36,8 @@
   margin: 5px;
 }
 
-
 .chatBase {
   width: 70%;
-  height: 585px;
 }
 
 /* /CONTAINERS DIV */
@@ -122,7 +119,6 @@
   width: 75%;
   height: 30px;
   border: 1px solid #F4F4F4;
-
 }
 
 .scrollSec {
@@ -168,7 +164,6 @@
 .baloon .received{
   background-color: #FFFFFF;
   max-width: 60%;
-
 }
 
 .baloon .message {

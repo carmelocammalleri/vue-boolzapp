@@ -123,7 +123,7 @@ createApp ({
                   },
                 {
                   date: '10/01/2020 15:51:00',
-                  message: 'Nessuna nuova, buona nuova',
+                  message: 'Quindi nessuna nuova, che peccato. Ci sentiamo presto',
                   status: 'sent'
                 }
               ],
